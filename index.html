@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Color Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <h1>CD Color Scanner</h1>
+        <p>Point your camera at a colored CD, center it, and press Scan.</p>
+        
+        <div id="camera-container">
+            <video id="video" playsinline autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div id="controls">
+            <button id="scan-button">Scan</button>
+            <button id="play-button" disabled>Play</button>
+        </div>
+
+        <div id="status">Please allow camera access.</div>
+    </div>
+
+    <script type="importmap">
+    {
+        "imports": {}
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
